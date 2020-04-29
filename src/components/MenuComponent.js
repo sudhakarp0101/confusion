@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import DishDetail from './DishDetail';
 
+
 class Menu extends Component {
     constructor(props) {
         super(props);
@@ -34,8 +35,8 @@ class Menu extends Component {
                 <div className="row">
                     {menu}
                 </div>
-                <div>
-                    {this.state.selectedDish && <DishDetail dish={this.state.selectedDish} />}
+                <div className="row">
+                    <DishDetail dish={this.state.selectedDish ? this.state.selectedDish : false} />
                 </div>
             </div>
         );
