@@ -36,7 +36,7 @@ class Menu extends Component {
                     {menu}
                 </div>
                 <div className="row">
-                    <DishDetail dish={this.state.selectedDish !== null ? this.state.selectedDish : null} />
+                    <DishDetail dish={this.state.selectedDish} />
                 </div>
             </div>
         );
